@@ -1,0 +1,62 @@
+App Structure
+----------------------
+
+*  src
+|
+|
+|---*api
+|
+|
+|
+|---*redux
+|   |
+|   |
+|   |--reducers(Unification all reducers)
+|   |--store (Unification all stores)
+|
+|
+|---*pages
+|   |
+|   |
+|   |---*candidates
+|       |
+|       |---*api
+|       |   |
+|       |   |-api.candidates.js
+|       |
+|       |---*store
+|       |   |
+|       |   |-candidates.action.js
+|       |   |-candidates.constants.js
+|       |   |-candidates.reducers.js
+|       |   |-candidates.saga.js
+|       |
+|       |
+|       |
+|       |---*routes(WIP)
+|       
+|       
+|       
+|---* actions
+|   |
+|   |
+|   |-- api.js (handle all http request)
+|   |-- dCandidate.js (Redux actions & action creators)
+|   |-- store.js (configure redux store)
+|
+|---* components
+|   |
+|   |--DCandidateForm.jsx (form operations)
+|   |--DCandidates.jsx (list of records)
+|   |--useForm.js (handles common form operations)
+|   
+|---* reducers
+|   |
+|   |--dCandidate.js
+|   |--index.js
+|
+|--App.js
+|--index.js
+|--index.css
+
+redux, react-redux, redux-saga
